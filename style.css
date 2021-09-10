@@ -299,7 +299,6 @@ i{
   background-color: white;
   opacity: 0.1;
   transform: rotate(45deg);
-  display: none;
 }
 .page_main_image{
   position: absolute;
