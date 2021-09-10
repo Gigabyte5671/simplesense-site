@@ -272,6 +272,7 @@ i{
 .page_heading h2{
   width: fit-content;
   font-size: 36px;
+  font-weight: 400;
   border-bottom: 1px solid #FFFFFFA0;
 }
 .page_heading img{
