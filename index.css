@@ -14,7 +14,7 @@
 
 html{
   /* background-image: url("assets/images/starscape.webp"); */
-  background-color: white;
+  background-color: #F5F5F5;
 }
 
 body{
@@ -131,6 +131,10 @@ landing_subtitle p{
   font-size: 38px;
   letter-spacing: 0.1ch;
 }
+.landing_down_arrow::after{
+  background-color: white;
+}
+
 
 horizontal_accent{
   opacity: 0.4;
