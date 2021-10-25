@@ -256,6 +256,7 @@ quote{
   background-color: #FFFFFF10;
   border: 1px solid var(--ss_lightblue);
   border-radius: var(--ls_border_radius_larger);
+  box-shadow: 2px 4px 10px -7px black;
 }
 quote:before{
   content: "";
