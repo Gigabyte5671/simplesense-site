@@ -7,7 +7,7 @@
   --ss_lightblue_2: #4882E1;
   --ss_darkblue: #305695;
 
-  --ls_nav_height: 80px;
+  --ls_nav_height: 70px;
 
   --ls_text_color: black;
 }
@@ -142,7 +142,7 @@ horizontal_accent{
 
 
 card{
-  border-color: black;
+  border-color: var(--ss_lightblue);
 }
 
 
@@ -153,20 +153,86 @@ mantra{
   justify-content: center;
   align-items: center;
   width: 250px;
-  height: 110px;
+  height: 150px;
   margin: 40px 0px 0px 10px;
-  padding: 10px;
+  padding: 1px;
   background-color: #FFFFFF10;
-  border: 1px solid var(--ss_lightblue);
+  /* border: 1px solid var(--ss_lightblue); */
   border-radius: var(--ls_border_radius_larger);
+}
+mantra:before{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -9px;
+  left: -11px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(assets/icons/attachment_grey_24dp.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(75deg);
+  user-select: none;
+  pointer-events: none;
+}
+mantra background{
+  background: linear-gradient(315deg, var(--ss_lightblue) 0%, transparent 100%);
+  border-radius: var(--ls_border_radius_larger);
+}
+mantra_inner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: calc(var(--ls_border_radius_larger) - 1px);
+}
+mantra img{
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 mantra p{
   text-align: center;
 }
-mantra p:nth-child(1){
-  font-weight: bold;
-}
 mantra p:nth-child(2){
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-start;
+  font-size: 20px;
+  font-family: 'Dosis', 'Segoe UI', sans-serif;
+  font-weight: bold;
+  transition: var(--ls_anim_duration_short) ease all;
+}
+mantra p:nth-child(2)::after{
+  content: "...";
+  position: absolute;
+  bottom: -40px;
+  font-size: 30px;
+  font-family: inherit;
+  transition: inherit;
+  opacity: 0.6;
+}
+mantra p:nth-child(3){
+  max-height: 0px;
+  transition: var(--ls_anim_duration_medium) ease all;
+  overflow: hidden;
+}
+mantra:hover p:nth-child(2)::after{
+  opacity: 0;
+}
+mantra:hover p:nth-child(3){
+  max-height: 100%;
 }
 
 
@@ -187,15 +253,17 @@ quote{
 quote:before{
   content: "";
   position: absolute;
-  top: -35px;
-  left: -53px;
+  top: -30px;
+  left: -45px;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-image: url(assets/icons/quote_grey.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
+  user-select: none;
+  pointer-events: none;
 }
 quote p{
 
