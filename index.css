@@ -107,11 +107,12 @@ landing_image{
 } */
 landing_title{
   color: white;
-  font-size: 105px;
-  font-weight: 500;
-  font-weight: bold;
+  font-size: 116px;
+  /* font-weight: 500;
+  font-weight: bold; */
+  font-family: 'Dosis', 'Segoe UI', sans-serif;
 
-  background: linear-gradient(90deg, var(--ss_lightblue) 0%, var(--ss_lightblue) 55%, var(--ss_darkblue) 55%, var(--ss_darkblue) 100%);
+  background: linear-gradient(90deg, var(--ss_lightblue) 0%, var(--ss_lightblue) 54%, var(--ss_darkblue) 54%, var(--ss_darkblue) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
