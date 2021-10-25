@@ -146,6 +146,30 @@ card{
 }
 
 
+mantra{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 110px;
+  margin: 40px 0px 0px 10px;
+  padding: 10px;
+  background-color: #FFFFFF10;
+  border: 1px solid var(--ss_lightblue);
+  border-radius: var(--ls_border_radius_larger);
+}
+mantra p{
+  text-align: center;
+}
+mantra p:nth-child(1){
+  font-weight: bold;
+}
+mantra p:nth-child(2){
+}
+
+
 quote{
   position: relative;
   display: flex;
