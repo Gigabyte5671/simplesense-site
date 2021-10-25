@@ -33,6 +33,7 @@ main{
   height: unset;
   padding-right: 30px;
   padding-left: 30px;
+  border-top: 1px solid var(--ss_lightblue);
   backdrop-filter: blur(130px);
 }
 section{
@@ -76,6 +77,7 @@ site_logo_image img{
 
 nav{
   justify-content: center;
+  border-bottom: 1px solid var(--ss_lightblue);
 }
 nav background{
   background-color: white;
