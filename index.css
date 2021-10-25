@@ -152,6 +152,7 @@ quote{
   margin: 40px 0px 0px 0px;
   padding: 30px;
   background-color: #FFFFFF10;
+  border: 1px solid #00000080;
   border-radius: var(--ls_border_radius_medium);
 }
 quote:before{
@@ -162,7 +163,7 @@ quote:before{
   display: block;
   width: 90px;
   height: 90px;
-  background-image: url(assets/icons/format_quote_white_24dp.svg);
+  background-image: url(assets/icons/format_quote_grey_24dp.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
