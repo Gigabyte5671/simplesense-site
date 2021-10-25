@@ -31,6 +31,8 @@ main{
   align-items: center;
   width: 100%;
   height: unset;
+  padding-right: 30px;
+  padding-left: 30px;
   backdrop-filter: blur(130px);
 }
 section{
