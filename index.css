@@ -280,3 +280,20 @@ quote p:nth-child(2){
   margin-top: 20px;
   font-weight: bold;
 }
+
+
+
+
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  background-color: var(--ss_darkblue);
+  color: white;
+}
