@@ -143,7 +143,11 @@ horizontal_accent{
 
 
 card{
+  margin: 5px;
   border-color: var(--ss_lightblue);
+}
+card_inner{
+  background-color: white;
 }
 
 
