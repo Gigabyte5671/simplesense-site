@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simplesense</title>
+    <meta property="og:title" content="Simplesense">
+    <meta property="og:site_name" content="Simplesense">
+    <meta name="description" content="bringing out your best potential">
+    <meta property="og:description" content="bringing out your best potential">
+    <meta name="author" content="Gigabyte5671">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="cover.webp">
+    <meta name="twitter:image:alt" content="site cover image">
+    <meta name="theme-color" content="#2D2D2D">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/image_white_24dp.svg">
+    <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard/css/lightshard.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script type="text/javascript" src="https://gigabyte5671.github.io/lightshard/lib/lightshard.js" defer></script>
+    <script type="text/javascript" src="assets/data/site_data.js" defer></script>
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  
+  <body>
+    <nav>
+      <background></background>
+      <site_logo><a href=""><site_logo_image><img src="assets/icons/image_white_24dp.svg" draggable="false"></site_logo_image></a></site_logo>
+      <navtable>
+        <navlinks>
+          <a href="#home" class="active" onclick="navlinks(event)"><p>home</p></a>
+          <a href="#about" onclick="navlinks(event)"><p>about</p></a>
+          <a href="#blog" onclick="navlinks(event)"><p>blog</p></a>
+          <a href="#feedback" onclick="navlinks(event)"><p>feedback</p></a>
+          <a href="#contact" onclick="navlinks(event)"><p>contact</p></a>
+        </navlinks>
+      </navtable>
+    </nav>
+
+    <landing id="home">
+      <landing_inner>
+        <landing_background>
+          <img src="assets/images/background-4.jpg" draggable="false">
+        </landing_background>
+        <landing_image></landing_image>
+        <landing_title>simplesense</landing_title>
+        <landing_subtitle class="nobefore">
+          <p>bringing</p><p>out</p><p>your</p><p>best</p><p>potential</p>
+        </landing_subtitle>
+        <a href="#about" class="landing_down_arrow"></a>
+      </landing_inner>
+    </landing>
+
+    <main id="main">
+
+
+      <section id="about">
+        <h1>about</h1>
+        <horizontal_accent></horizontal_accent>
+        <section_inner>
+          <content_left>
+            <p>Darren is a coach and leader with extensive experience in building successful teams, transforming service delivery, trouble-shooting, public sector governance, digital transformation, and coaching individuals to unlock their potential. In our complex, fast-paced world, he is driven by a passion for creating simplicity, enabling high-functioning teams and generating powerful outcomes. His mission is to help others thrive in their life, work, and business.</p>
+            <p>Traditional coaching helps a person uncover what they need to do to move forward in a particular situation. Action steps are designed using the client’s current ways of seeing themselves and their world.</p>
+            <p>Rather than focusing on the what of the situation, Darren explores in partnership with the client how they’re relating to the situation. Simple but powerful shifts occur, enabling the client to make deep and lasting change.</p>
+          </content_left>
+        </section_inner>
+      </section>
+
+
+      <section id="feedback">
+        <h1>feedback</h1>
+        <horizontal_accent></horizontal_accent>
+        <section_inner>
+          <quote>
+            <p>My coaching conversation with Darren heightened my self awareness and provided clarity on the path towards making courageous decisions. Uncovering quiet truths about myself was not easy, but Darren created a respectful and safe space for positive discovery and learning.</p>
+            <p>Rhea, Philippines</p>
+          </quote>
+        </section_inner>
+      </section>
+
+
+      <section id="blog">
+        <h1>blog</h1>
+        <horizontal_accent></horizontal_accent>
+        <section_inner>
+
+        </section_inner>
+      </section>
+
+
+      <section id="contact">
+        <h1>contact</h1>
+        <horizontal_accent></horizontal_accent>
+        <section_inner>
+
+        </section_inner>
+      </section>
+
+
+    </main>
+  </body>
+  
+  
+  <script src="lib/jquery.min.js"></script>
+  <script> //Navigation Events
+    function navlinks(event){
+      $("navlinks").children().removeClass("active");
+      $(event.target).addClass("active");
+      /* if($(event.target).html() == "Home"){
+        $("title").html("Dazza Coaching");
+      }else{
+        $("title").html($(event.target).html() + " | simple sense");
+      } */
+    }
+    function navlinksDemo(event){
+      $("#navlinksDemo").children().removeClass("active");
+      $(event.target).addClass("active");
+    }
+  </script>
+</html>
