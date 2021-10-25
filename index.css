@@ -177,22 +177,22 @@ quote{
   justify-content: center;
   align-items: flex-start;
   width: 500px;
-  height: 230px;
-  margin: 40px 0px 0px 0px;
+  height: 300px;
+  margin: 40px 0px 0px 70px;
   padding: 30px;
   background-color: #FFFFFF10;
-  border: 1px solid #00000080;
-  border-radius: var(--ls_border_radius_medium);
+  border: 1px solid var(--ss_lightblue);
+  border-radius: var(--ls_border_radius_larger);
 }
 quote:before{
   content: "";
   position: absolute;
-  top: -40px;
-  left: -60px;
+  top: -35px;
+  left: -53px;
   display: block;
-  width: 90px;
-  height: 90px;
-  background-image: url(assets/icons/format_quote_grey_24dp.svg);
+  width: 80px;
+  height: 80px;
+  background-image: url(assets/icons/quote_grey.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
