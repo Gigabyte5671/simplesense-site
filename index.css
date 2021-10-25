@@ -64,7 +64,7 @@ h2{
 
 
 site_logo_image{
-  border: 1px solid grey;
+  background: linear-gradient(315deg, var(--ss_lightblue) 0%, transparent 100%);
   border-radius: 50%;
 }
 site_logo_image img{
@@ -137,6 +137,7 @@ landing_subtitle p{
 
 
 horizontal_accent{
+  background: linear-gradient(90deg, var(--accent_color) 0%, var(--accent_color) 90%, transparent 100%);
   opacity: 0.4;
 }
 
@@ -175,6 +176,8 @@ mantra:before{
   transform: rotate(75deg);
   user-select: none;
   pointer-events: none;
+
+  display: none;
 }
 mantra background{
   background: linear-gradient(315deg, var(--ss_lightblue) 0%, transparent 100%);
