@@ -6,6 +6,15 @@
   --ss_lightblue: #90A9DD;
   --ss_lightblue_2: #4882E1;
   --ss_darkblue: #305695;
+  --ss_barely_grey: #F5F5F5;
+
+  --ss_light_tetradic_1: #DD90D0;
+  --ss_light_tetradic_2: #DDC490;
+  --ss_light_tetradic_3: #90DD9D;
+
+  --ss_dark_tetradic_1: #953089;
+  --ss_dark_tetradic_2: #956F30;
+  --ss_dark_tetradic_3: #30953D;
 
   --ls_nav_height: 70px;
 
@@ -14,7 +23,7 @@
 
 html{
   /* background-image: url("assets/images/starscape.webp"); */
-  background-color: #F5F5F5;
+  background-color: var(--ss_barely_grey);
 }
 
 body{
@@ -78,6 +87,19 @@ site_logo_image img{
 nav{
   justify-content: center;
   border-bottom: 3px solid var(--ss_lightblue);
+}
+nav::after{
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -3px;
+  left: 0px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ss_lightblue) 0%, #DD90D0 25%, #DDC490 75%, #90DD9D 100%);
+  box-shadow: 0px 0px 5px black;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% + 10px), 0% calc(100% + 10px));
+
+  display: none;
 }
 nav background{
   background-color: white;
