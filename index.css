@@ -103,6 +103,7 @@ nav::after{
 }
 nav background{
   background-color: white;
+  opacity: 1;
 }
 navlinks a{
   color: black;
@@ -323,4 +324,16 @@ footer{
   margin: 0px;
   background-color: var(--ss_darkblue);
   color: white;
+}
+
+
+
+
+
+
+article_inner{
+  background-color: var(--ss_barely_grey);
+}
+article_inner h1{
+  font-family: 'Dosis';
 }
