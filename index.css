@@ -277,7 +277,8 @@ quote{
   justify-content: center;
   align-items: flex-start;
   width: 500px;
-  height: 300px;
+  height: fit-content;
+  min-height: 300px;
   margin: 40px 35px 0px 35px;
   padding: 30px;
   background-color: #FFFFFF10;
