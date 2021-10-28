@@ -176,6 +176,10 @@ card{
 card_inner{
   background-color: white;
 }
+card h3{
+  color: var(--ss_darkblue);
+  font-family: 'Dosis', 'Segoe UI', sans-serif;
+}
 
 
 mantra{
