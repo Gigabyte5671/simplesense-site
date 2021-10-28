@@ -112,6 +112,9 @@ navlinks a::after{
   background-color: white;
 }
 
+landing_background{
+  filter: contrast(1.2);
+}
 /* landing_background{
   background: linear-gradient(180deg, white 0%, orange 40%, #ff6161 52%, lightblue 55%, #004eff 100%);
 }
